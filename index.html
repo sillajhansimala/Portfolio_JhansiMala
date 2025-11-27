@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-eddge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio website - jhansimala</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/92420ecd49.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LogoImage_Jhansi.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!------<p>Data Analyst</p> ---> 
+            <h1>Hello, I'm <span>JhansiMala Silla </span><br> from India</h1>
+        </div>
+    </div>
+</div>
+
+<!-----------------About------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_column1">
+                <img src="images/MyImage.jpg">
+            </div>
+            <div class="about_column2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I am JhansiMala Silla, a Master’s student in Information Science & Technology at Missouri University of Science and Technology, graduating in December 2025. I am passionate about turning data into meaningful insights using analytics, machine learning, and visualization tools.
+                <br><br>With a background in Computer Science and professional experience as an SAP Developer at Tata Consultancy Services (TCS), I combine technical expertise with strong business understanding. My journey has strengthened my skills in Python, SQL, Power BI, Tableau, SAP S/4HANA, and data modeling.<br><br>
+                I have worked on projects involving Walmart sales analytics, fraud detection, customer churn prediction, and dashboard development. I also served as a Teaching Assistant for “Machine Learning & AI for Business,” and as a Peer Facilitator promoting student well-being and community at Missouri S&T.<br><br>
+                I am actively seeking full-time roles beginning January 2026 in Data Analytics, Business Analytics, Data Science, or AI/ML applications. </p>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Volunteer')">Volunteer Experience</p>
+                    <p class="tab-links" onclick="opentab('Honors & awards')">Honor</p>
+                
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming</span><br>
+                            Python, SQL (MySQL, SQL Server), Java, R, HTML, CSS, Flask, Django, React.js
+                        </li>
+
+                        <li><span>Data Visualization</span><br>
+                            Power BI, Tableau, Excel, Google Sheets, Data Cleaning, ER Diagrams, ETL, Dimensional Modeling, Lucidchart, Canva
+                        </li>
+
+                        <li><span>Machine Learning</span><br>
+                            Logistic Regression, Decision Trees, Random Forest, Clustering, Deep Learning (ResNet18, CNN),
+                            Scikit-learn, Feature Engineering, Model Deployment, OpenCV
+                        </li>
+
+                        <li><span>Tools</span><br>
+                            SAP S/4HANA, Git, GitHub, Jupyter Notebook, Microsoft Word, Microsoft Excel
+                        </li>
+
+                        <li><span>Soft Skills</span><br>
+                            Communication, Problem Solving, Teamwork, Time Management
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>01/2024 – 12/2025</span><br>
+                            Master’s in Information Science & Technology - GPA: 3.88/4.0<br>
+                            Missouri University of Science and Technology 
+                        </li>
+
+                        <li><span>06/2018 – 07/2022</span><br>
+                            Bachelor’s in Computer Science & Engineering - GPA: 3.2/4.0<br>
+                            GMR Institute of Technology
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>01/2025 – 12/2025</span><br>
+                            Teaching Assistant <br>
+                            Course - BUS5730 : Machine Learning & AI for Business<br>
+                            Missouri University of Science and Technology
+                        </li>
+
+                        <li><span>09/2024 – 12/2025</span><br>
+                            Peer Facilitator and belonging<br>
+                            Joe’s PEERS Member<br>
+                            Missouri S&T Student Well-Being
+                        </li>
+
+                        <li><span>09/2024 – 12/2025</span><br>
+                            Student Worker - Dining Services <br>
+                            Chartwells Higher Education<br>
+                            Missouri University of Science and Technology
+                        </li>
+
+                        <li><span>06/2023 – 12/2023</span><br>
+                            Assistant System Engineer (SAP Developer)<br>
+                            Tata Consultancy Services (TCS)
+                        </li>
+
+                        <li><span>07/2020 – 09/2020</span><br>
+                            Android App Development - Intenship <br>
+                            Internshala
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="Volunteer">
+                    <ul>
+                        <li><span>05/2025 – Present</span><br>
+                            Graduate Research Assistant <br>
+                            Supervised by Yu-Hsien Chiu <br>
+                            Assisted in fraud detection project along with PowerBI course development by testing instructional materials <br>
+                            Business and Information science department - Missouri S&T
+                        </li>
+
+                        <li><span>09/2024 – 12/2025</span><br>
+                            Joe’s PEERS Member<br>
+                            Missouri S&T Student Well-Being
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="tab-contents" id="Honors & awards">
+                    <ul>
+                        <li><span>Member, Beta Gamma Sigma Honor Society</span><br>
+                            Issued by Beta Gamma Sigma - Apr 2025 <br>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Sevices--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Visualization</h2>
+                <p><p>I create dashboards in Power BI and Tableau that turn raw data into clear, actionable business insights.</p>
+            </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> Data Analytics & Modeling</h2>
+                <p><p>I analyze datasets using Python, SQL, and machine learning methods to identify patterns, trends, and predictions.</p></p>
+                <a  href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web Design</h2>
+                <p><p>I design clean and responsive web interfaces using HTML, CSS, and JavaScript for portfolios and analytics apps.</p></p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------Projects------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/WalmartSalesProject.png">
+                <div class="layer">
+                    <h3>Walmart-Sales-Analytics-Dashboard</h3>
+                    <a href="https://github.com/sillajhansimala/Walmart-Sales-Analytics-Dashboard" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/BestSwitchesProject.png">
+                <div class="layer">
+                    <h3>BestSwitchs Negotiation Strategy - Seller Role</h3>
+                    <a href="http://github.com/sillajhansimala/BestSwitchs-Negotiation-Strategy" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/Wastetoenergyproject.png">
+                <div class="layer">
+                    <h3>Waste to energy project</h3>
+                    <a href="https://github.com/sillajhansimala/Waste-to-energy-project" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/Visualinsights.jpg">
+                <div class="layer">
+                    <h3>Recreated Visual Insights</h3>
+                    <a href="https://github.com/sillajhansimala/Recreated-Visual-Insights" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/UniversityProject.png">
+                <div class="layer">
+                    <h3>University Database Management System</h3>
+                    <a href="https://github.com/sillajhansimala/University-sql-database" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/Covid19Project.jpg">
+                <div class="layer">
+                    <h3>COVID19 detection using CT scan images</h3>
+                    <a href="https://github.com/sillajhansimala/Covid19-Detection-using-chest-CT-scan-Images" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/CustomerChurnProject.png">
+                <div class="layer">
+                    <h3>customer Churn Dashboard - Bank Dataset</h3>
+                    <a href="https://github.com/sillajhansimala/Customer-Churn-Dashboard-Bank-Dataset" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="work">
+                <img src="images/UsedCarProject.png">
+                <div class="layer">
+                    <h3>Used Car Data Dashboard</h3>
+                    <a href="https://github.com/sillajhansimala/Used-car-dataset-dashboard-" ><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+        
+</div>
+
+
+<!-------------Certificates--------------->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+
+        <div class="cert-list">
+
+            <div class="cert-item">
+                <a href="images/Intro to PowerBI.png" target="_blank">
+                    <img src="images/Intro to PowerBI.png" alt="Certificate 3">
+                </a>
+                <h3>Intro to PowerBI</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Data Visualization in Power BI.png" target="_blank">
+                    <img src="images/Data Visualization in Power BI.png" alt="Certificate 1">
+                </a>
+                <h3>Data Visualization in Power BI</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Intro to data visualization with ggplot2.png" target="_blank">
+                    <img src="images/Intro to data visualization with ggplot2.png" alt="Certificate 3">
+                </a>
+                <h3>Intro to data visualization with ggplot2</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Intermediate data visualization with ggplot2.png" target="_blank">
+                    <img src="images/Intermediate data visualization with ggplot2.png" alt="Certificate 2">
+                </a>
+                <h3>Intermediate data visualization with ggplot2</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Introduction to the Tidyverse.png" target="_blank">
+                    <img src="images/Introduction to the Tidyverse.png" alt="Certificate 3">
+                </a>
+                <h3>Introduction to the Tidyverse</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Introduction to R.png" target="_blank">
+                    <img src="images/Introduction to R.png" alt="Certificate 3">
+                </a>
+                <h3>Introduction to R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Sampling in R.png" target="_blank">
+                    <img src="images/Sampling in R.png" alt="Certificate 3">
+                </a>
+                <h3>Sampling in R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Intermediate R.png" target="_blank">
+                    <img src="images/Intermediate R.png" alt="Certificate 3">
+                </a>
+                <h3>Intermediate R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Introduction to Statistics in R.png" target="_blank">
+                    <img src="images/Introduction to Statistics in R.png" alt="Certificate 3">
+                </a>
+                <h3>Introduction to Statistics in R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Intermediate Regression in R.png" target="_blank">
+                    <img src="images/Intermediate Regression in R.png" alt="Certificate 3">
+                </a>
+                <h3>Intermediate Regression in R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Hypothesis Testing in R.png target=" target="_blank">
+                    <img src="images/Hypothesis Testing in R.png" alt="Certificate 3">
+                </a>
+                <h3>Hypothesis Testing in R</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Data Manipulation with dplyr.png" target="_blank">
+                    <img src="images/Data Manipulation with dplyr.png" alt="Certificate 3">
+                </a>
+                <h3>Data Manipulation with dplyr</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Robotic Process Automation.png" target="_blank">
+                    <img src="images/Robotic Process Automation.png" alt="Certificate 3">
+                </a>
+                <h3>Robotic Process Automation</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Skill Up_Foundations of AI.png" target="_blank">
+                    <img src="images/Skill Up_Foundations of AI.png" alt="Certificate 3">
+                </a>
+                <h3>Foundations of AI</h3>
+            </div>
+
+            <div class="cert-item">
+                <a href="images/Student Success Mentor Training.png" target="_blank">
+                    <img src="images/Student Success Mentor Training.png" alt="Certificate 3">
+                </a>
+                <h3>Student Success Mentor Training</h3>
+            </div>
+
+            
+
+        </div>
+
+      <a href="#" class="btn"> See More </a>
+    </div>
+</div>
+
+
+
+
+<!-------------Contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 Class="Sub-title">Contant Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> sillajhansimala@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +1(573)537-1560</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jhansimala"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sillajhansimala?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="images/JhansiMala_Silla.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" Placeholder = "Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" require>
+                    <textarea name="Message" rows="6" Placeholder="Your Message"> </textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @JhansiMala Silla <i class="fa-regular fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhyD4mAzQv8P9ZLnEZNfu_nP2NE28WeTQ09E_bXYXapF7t_2QdzD5BGuWU8GHxP0J-hw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById("message")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                message.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
